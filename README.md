@@ -28,7 +28,7 @@ $ cat ca-csr.json
 $ cfssl gencert -initca ca-csr.json | cfssljson -bare ca
 
 $ ls
-# ca-config.json ca-csr.json    ca-key.pem     ca.csr         ca.pem         generate-ca.sh
+# ca-csr.json    ca-key.pem     ca.csr         ca.pem
 
 $ openssl rsa -noout -text -in ca-key.pem
 # Private-Key: (2048 bit)
@@ -78,6 +78,11 @@ $ cat ca-config.json
     }
   }
 }
+```
+
+```bash
+$ ls
+# ca-config.json ca-csr.json    ca-key.pem     ca.csr         ca.pem
 ```
 
 #### Create the Server Certificate (2-generate-server-cert)
