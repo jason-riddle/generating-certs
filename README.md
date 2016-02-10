@@ -122,7 +122,7 @@ $ cfssl gencert \
 
 ```bash
 $ ls -a
-.                  ..                 apiserver-csr.json apiserver-key.pem  apiserver.csr      apiserver.pem
+# .                  ..                 apiserver-csr.json apiserver-key.pem  apiserver.csr      apiserver.pem
 ```
 
 ```bash
