@@ -27,7 +27,7 @@ $ cat ca-csr.json
 ```bash
 $ cfssl gencert -initca ca-csr.json | cfssljson -bare ca
 
-$ $ ls -a
+$ ls -a
 # .              ca-config.json ca-key.pem     ca.pem
 # ..             ca-csr.json    ca.csr         generate-ca.sh
 
