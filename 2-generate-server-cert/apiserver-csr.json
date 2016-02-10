@@ -1,5 +1,10 @@
 {
-  "CN": "Kubernetes CA",
+  "CN": "*.c.PROJECT_ID.internal",
+  "hosts": [
+    "127.0.0.1",
+    "EXTERNAL_IP",
+    "*.c.PROJECT_ID.internal"
+  ],
   "key": {
     "algo": "rsa",
     "size": 2048
@@ -9,7 +14,7 @@
       "C": "US",
       "L": "Portland",
       "O": "Kubernetes",
-      "OU": "CA",
+      "OU": "API Server",
       "ST": "Oregon"
     }
   ]
