@@ -27,8 +27,9 @@ $ cat ca-csr.json
 ```bash
 $ cfssl gencert -initca ca-csr.json | cfssljson -bare ca
 
-$ ls -a
-# .              ..             ca-config.json ca-csr.json    ca-key.pem     ca.csr         ca.pem         generate-ca.sh
+$ $ ls -a
+# .              ca-config.json ca-key.pem     ca.pem
+# ..             ca-csr.json    ca.csr         generate-ca.sh
 
 $ openssl rsa -noout -text -in ca-key.pem
 # Private-Key: (2048 bit)
