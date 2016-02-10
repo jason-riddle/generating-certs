@@ -27,14 +27,8 @@ $ cat ca-csr.json
 ```bash
 $ cfssl gencert -initca ca-csr.json | cfssljson -bare ca
 
-$ ls -al
-total 40
-drwxr-xr-x  7 puu562  COF\Domain Users   238 Feb 10 12:02 .
-drwxr-xr-x  5 puu562  COF\Domain Users   170 Feb 10 12:04 ..
--rw-r--r--  1 puu562  COF\Domain Users   214 Feb 10 12:01 ca-csr.json
--rw-------  1 puu562  COF\Domain Users  1679 Feb 10 12:02 ca-key.pem
--rw-r--r--  1 puu562  COF\Domain Users  1009 Feb 10 12:02 ca.csr
--rw-r--r--  1 puu562  COF\Domain Users  1359 Feb 10 12:02 ca.pem
+$ ls -a
+# .              ..             ca-config.json ca-csr.json    ca-key.pem     ca.csr         ca.pem         generate-ca.sh
 
 $ openssl rsa -noout -text -in ca-key.pem
 # Private-Key: (2048 bit)
@@ -127,14 +121,8 @@ $ cfssl gencert \
 ```
 
 ```bash
-$ ls -al
-total 40
-drwxr-xr-x  7 puu562  COF\Domain Users   238 Feb 10 13:49 .
-drwxr-xr-x  6 puu562  COF\Domain Users   204 Feb 10 13:42 ..
--rw-r--r--  1 puu562  COF\Domain Users   316 Feb 10 13:42 apiserver-csr.json
--rw-------  1 puu562  COF\Domain Users  1679 Feb 10 13:49 apiserver-key.pem
--rw-r--r--  1 puu562  COF\Domain Users  1131 Feb 10 13:49 apiserver.csr
--rw-r--r--  1 puu562  COF\Domain Users  1480 Feb 10 13:49 apiserver.pem
+$ ls -a
+.                  ..                 apiserver-csr.json apiserver-key.pem  apiserver.csr      apiserver.pem
 ```
 
 ```bash
@@ -194,14 +182,8 @@ cfssl gencert \
 ```
 
 ```bash
-$ ls -al
-total 32
-drwxr-xr-x  6 puu562  COF\Domain Users   204 Feb 10 14:00 .
-drwxr-xr-x  7 puu562  COF\Domain Users   238 Feb 10 13:58 ..
--rw-r--r--  1 puu562  COF\Domain Users   235 Feb 10 13:58 admin-csr.json
--rw-------  1 puu562  COF\Domain Users  1679 Feb 10 14:00 admin-key.pem
--rw-r--r--  1 puu562  COF\Domain Users  1054 Feb 10 14:00 admin.csr
--rw-r--r--  1 puu562  COF\Domain Users  1403 Feb 10 14:00 admin.pem
+$ ls -a
+# .              ..             admin-csr.json admin-key.pem  admin.csr      admin.pem
 ```
 
 ```bash
